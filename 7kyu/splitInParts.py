@@ -20,19 +20,4 @@ Size is always positive
 def split_in_parts(s, part_length):
     return " ".join([s[x:x+part_length] for x in range(0, len(s), part_length)])
 
-#print(split_in_parts("supercalifragilisticexpialidocious", 3))
-
-
-'''
-Given a string of words (x), you need to return an array of the words, sorted alphabetically by the final character in each.
-
-If two words have the same last letter, they returned array should show them in the order they appeared in the given string.
-
-All inputs will be valid.
-'''
-def last(s):
-    return sorted(s.split(' '), key=lambda x: x[-1] )
-
-#print(last("man i need a taxi up to ubud"))
-
-
+print(split_in_parts("supercalifragilisticexpialidocious", 3))
