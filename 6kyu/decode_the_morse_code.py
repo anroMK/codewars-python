@@ -59,4 +59,3 @@ def decode_morse(code):
 
 print(decode_morse('.... . -.--   .--- ..- -.. .'))
 
-print('.... . -.--   .--- ..- -.. .'.split('  '))
