@@ -7,22 +7,12 @@ Write a function named isHollow/is_hollow/IsHollow that accepts an integer array
 """
 
 def is_hollow(x):
-    if len(x) < 3:
-        return False
-    if not 0 in x:
-        return False
-    if x.count(0) == len(x):
-        return True
-    if x.count(0) < 3:
-        return False
-    index = x.index(0) 
-    for i in x[index:-index]:
-        if i != 0:
-            return False
-    if 0 in x[:index] or 0 in x[-index:]:
-        return False
-    return True
-    
+    while len(x) > 2 and x[0] != 0 and x[-1] != 0: x=x[1:-1]
+    return len(x) > 2 and set(x) == {0}
+
+
+
+
 
 
 print(is_hollow([-1,0,0,0,3]))
