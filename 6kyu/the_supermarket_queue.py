@@ -12,6 +12,17 @@ Please look at the examples and clarifications below, to ensure you understand t
 
 """
 
+def queue_time_v2(customers, n):
+    tills = [0] * n
+    for i in customers:
+        find = tills.index(min(tills))
+        tills[find] += i
+    return max(tills)
+
+ 
+        
+
+
 def queue_time(customers, n):
     if len(customers) == 0:
         return 0
@@ -33,26 +44,9 @@ def queue_time(customers, n):
 
 
 
-    """
-    for i in range(len(indices)):
-
-    while customers.pop() != -1:
-        tills_left_time[]
-    #return indices
-    """
-    
-
-
-    """
-    if len(customers) <= n and len(customers) >  0:
-        return max(customers)
-    elif len(customers) == 0:
-        return 0
-    elif 
-
-    """
 #print(queue_time([2,2,3,3,4,4], 2))  
 #print(queue_time([1, 2, 3, 4, 5], 1))  
 print(queue_time([22, 28, 50, 4, 19, 14, 17, 41, 38, 12, 10, 44, 17, 23, 8], 3))  
+print(queue_time_v2([22, 28, 50, 4, 19, 14, 17, 41, 38, 12, 10, 44, 17, 23, 8], 3))  
 
 
