@@ -35,11 +35,10 @@ def queue_time(customers, n):
         #print(indices)
         for i in indices:       #dla kazdego pustego indeksu
             tills_left_time[i] = customers.pop(0) 
-        print(tills_left_time)  
+        #print(tills_left_time)  
         tills_left_time = [i-1 if i >0 else 0 for i in tills_left_time]
-        
         time += 1
-        print(f"time: {time}")
+        #print(f"time: {time}")
     return time + max(tills_left_time)
 
 
