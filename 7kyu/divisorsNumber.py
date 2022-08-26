@@ -15,8 +15,3 @@ def divisors(n):
 
 
 print(divisors(30))
-
-def divisors1(n):
-    return [x for x in range(1,n+1) if n%x == 0]
-
-print(divisors1(30))
