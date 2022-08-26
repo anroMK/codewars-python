@@ -28,7 +28,7 @@ def domain_name(url):
     return pat.search(url).group(3)
 ```
 
-##Test
+## Test
 ```python
 print(domain_name("http://github.com/carbonfive/raygun"))
 print(domain_name("http://google.com"))

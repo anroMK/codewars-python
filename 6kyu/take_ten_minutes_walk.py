@@ -7,7 +7,7 @@ Note: you will always receive a valid array (string in COBOL) containing a rando
 """
 
 
-x = ['n','s','n','s','n','s','n','s','n','s']
+#x = ['n','s','n','s','n','s','n','s','n','s']
 
 
 def is_valid_walk(walk):
@@ -20,5 +20,7 @@ def is_valid_walk_v2(walk):
     return len(walk) == 10 and walk.count('n') - walk.count('s') == 0 and walk.count('w') - walk.count('e') == 0
 
 print(is_valid_walk(['w','e','w','e','w','e','w','e','w','e','w','e']))
+print(is_valid_walk_v2(['w','e','w','e','w','e','w','e','w','e','w','e']))
+print(is_valid_walk(['w','e','w','e','w','e','w','e','w','e']))
 print(is_valid_walk_v2(['w','e','w','e','w','e','w','e','w','e']))
 
