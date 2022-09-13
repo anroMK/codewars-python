@@ -12,6 +12,8 @@ Ex n = 10
 
 Twin Primes are (3,5) (5,7) so your function should return 2!
 
+[codewars](https://www.codewars.com/kata/596549c7743cf369b900021b/train/python)
+
 ### Solution
 ```python
 def is_prime(number):
